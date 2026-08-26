@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+
+  <title>네메트라(세계수 키우기) 개인정보처리방침 및 광고·구독 이용 안내</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f7f5;
+      --card: #ffffff;
+      --text: #18201b;
+      --muted: #59645c;
+      --line: #dfe6e0;
+      --accent: #276749;
+      --accent-soft: #e9f5ee;
+      --warning: #8a4b08;
+      --warning-bg: #fff5e8;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111512;
+        --card: #181e1a;
+        --text: #eef4ef;
+        --muted: #b9c5bc;
+        --line: #2c3730;
+        --accent: #78c69a;
+        --accent-soft: #1e3427;
+        --warning: #ffd39a;
+        --warning-bg: #392718;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans KR",
+        Arial,
+        sans-serif;
+      line-height: 1.72;
+      word-break: keep-all;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 36px auto;
+      padding: 42px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.75rem, 4vw, 2.4rem);
+      line-height: 1.3;
+    }
+
+    h2 {
+      margin: 38px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 8px 0 8px 22px;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 26px;
+    }
+
+    .summary {
+      padding: 18px 20px;
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      margin: 22px 0;
+    }
+
+    .purchase-box {
+      margin: 18px 0;
+      padding: 20px;
+      background: var(--accent-soft);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .purchase-box h3:first-child {
+      margin-top: 0;
+    }
+
+    .price-note {
+      padding: 16px 18px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      margin: 12px 0;
+    }
+
+    .warning {
+      padding: 16px 18px;
+      background: var(--warning-bg);
+      color: var(--warning);
+      border: 1px solid var(--warning);
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--line);
+      padding: 11px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--accent-soft);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 680px) {
+      main {
+        width: 100%;
+        margin: 0;
+        padding: 26px 20px 38px;
+        border: 0;
+        border-radius: 0;
+      }
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+      }
+
+      tr {
+        margin-bottom: 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      td {
+        border: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      td:last-child {
+        border-bottom: 0;
+      }
+
+      td::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 4px;
+        color: var(--muted);
+        font-weight: 700;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>
+      네메트라(세계수 키우기)<br />
+      개인정보처리방침 및 광고·구독 이용 안내
+    </h1>
+
+    <div class="meta">
+      시행일: 2026년 8월 26일<br />
+      최종 수정일: 2026년 8월 26일<br />
+      개발자: sahy7675
+    </div>
+
+    <p>
+      sahy7675(이하 “개발자”)는 「네메트라(세계수 키우기)」
+      (이하 “앱”) 이용자의 개인정보를 중요하게 생각하며,
+      관련 법령과 Google Play 정책에 따라 개인정보를 처리합니다.
+    </p>
+
+    <p>
+      본 앱은 세계수를 성장시키는 게임으로, 자연 획득 및 터치를 통한
+      경험치 획득, 사용자가 선택하여 시청하는 보상형 광고를 통한
+      일정 시간 경험치 부스팅, 월 구독이 활성화된 기간 동안의
+      상시 경험치 부스팅 기능을 제공합니다.
+    </p>
+
+    <div class="summary">
+      <strong>핵심 요약</strong>
+
+      <ul>
+        <li>
+          앱은 회원가입이나 개발자가 운영하는 자체 로그인 기능을
+          제공하지 않습니다.
+        </li>
+
+        <li>
+          게임 진행 정보는 원칙적으로 이용자의 기기 내부에 저장됩니다.
+        </li>
+
+        <li>
+          보상형 광고에는 Google AdMob이 사용되며, 광고 제공 과정에서
+          제한된 기기 및 이용 정보가 Google에 의해 처리될 수 있습니다.
+        </li>
+
+        <li>
+          월 구독 결제는 Google Play 결제 시스템을 통해 처리되며,
+          개발자는 카드번호나 은행계좌 정보를 직접 수집하지 않습니다.
+        </li>
+
+        <li>
+          월 구독의 “상시 부스팅”은 구독이 유효한 기간 동안 계속
+          적용된다는 뜻이며, 영구 구매를 의미하지 않습니다.
+        </li>
+      </ul>
+    </div>
+
+    <h2>1. 적용 범위</h2>
+
+    <p>
+      본 개인정보처리방침은 앱의 설치, 실행, 게임 진행, 보상형 광고
+      이용, 월 구독 결제 및 고객 문의 과정에서 이루어지는 개인정보
+      처리에 적용됩니다.
+    </p>
+
+    <h2>2. 개발자가 직접 수집하는 개인정보</h2>
+
+    <h3>2.1 회원가입 및 로그인</h3>
+
+    <p>
+      앱은 회원가입 또는 개발자가 운영하는 자체 로그인 기능을
+      제공하지 않습니다.
+    </p>
+
+    <p>
+      개발자는 이름, 생년월일, 전화번호, 주소, 정확한 위치정보,
+      사진, 영상, 카메라 또는 마이크 정보 등을 개발자 서버로
+      직접 수집하지 않습니다.
+    </p>
+
+    <h3>2.2 고객 문의</h3>
+
+    <p>
+      이용자가 이메일로 문의하는 경우 문의 처리에 필요한 범위에서
+      다음 정보가 처리될 수 있습니다.
+    </p>
+
+    <ul>
+      <li>이메일 주소</li>
+      <li>문의 내용</li>
+      <li>이용자가 직접 첨부한 자료</li>
+      <li>주문번호 또는 구매 관련 정보</li>
+    </ul>
+
+    <p>
+      해당 정보는 문의 해결, 본인 및 거래 확인, 환불·분쟁 대응을
+      위해서만 사용됩니다.
+    </p>
+
+    <h2>3. 기기 내부에 저장되는 게임 정보</h2>
+
+    <p>
+      앱은 정상적인 게임 진행을 위해 다음 정보를 이용자의 기기 내부
+      앱 저장공간에 저장할 수 있습니다.
+    </p>
+
+    <ul>
+      <li>레벨, 경험치, 세계수 성장 상태 등 게임 진행 정보</li>
+      <li>보상형 광고 부스팅의 적용 여부와 남은 시간</li>
+      <li>음향, 화면, 테마 등 이용자 설정</li>
+      <li>구독 혜택 적용을 위한 최근 구독 상태 확인 정보</li>
+    </ul>
+
+    <p>
+      해당 정보는 원칙적으로 개발자가 운영하는 서버로 전송되지
+      않습니다.
+    </p>
+
+    <p>
+      앱을 삭제하거나 기기 설정에서 앱 데이터 삭제를 실행하면
+      기기 내부의 게임 정보가 삭제될 수 있으며, 삭제된 게임 진행
+      정보는 복구되지 않을 수 있습니다.
+    </p>
+
+    <p>
+      이용자의 Android 기기 또는 Google 계정에서 앱 데이터 백업
+      기능이 활성화된 경우 일부 로컬 데이터가 운영체제의 백업 기능을
+      통해 처리될 수 있습니다. 해당 백업은 이용자의 기기 및
+      Google 계정 설정에 따릅니다.
+    </p>
+
+    <h2>4. 보상형 광고와 Google AdMob</h2>
+
+    <p>
+      앱은 이용자가 직접 선택하여 시청하는 보상형 광고를 제공하기
+      위해 Google AdMob 및 Google Mobile Ads SDK를 사용할 수 있습니다.
+    </p>
+
+    <p>
+      Google Mobile Ads SDK는 광고 제공, 광고 성과 측정, 분석,
+      보안 및 부정행위 방지를 위해 다음 정보를 자동으로 수집하거나
+      공유할 수 있습니다.
+    </p>
+
+    <ul>
+      <li>IP 주소 및 이를 통해 추정되는 대략적인 위치</li>
+      <li>
+        앱 실행, 화면 터치, 광고 시청 등 앱 및 광고 상호작용 정보
+      </li>
+      <li>
+        앱 또는 SDK의 성능, 오류, 중단, 실행 시간 등 진단 정보
+      </li>
+      <li>
+        광고 ID, 앱 세트 ID 등 기기 또는 계정 관련 식별자
+      </li>
+    </ul>
+
+    <p>
+      보상형 광고는 선택 사항입니다.
+    </p>
+
+    <p>
+      이용자가 앱 화면에 표시된 광고 시청 버튼을 선택하고 광고 시청
+      완료가 정상적으로 확인되면, 앱 화면에 표시된 배율과 시간에 따라
+      일정 기간 경험치 부스팅이 적용됩니다.
+    </p>
+
+    <p>
+      광고를 시청하지 않아도 기본적인 게임 이용은 가능하며,
+      해당 광고와 연결된 일시적 부스팅 혜택만 제공되지 않습니다.
+    </p>
+
+    <p>
+      광고의 개인화 여부는 이용자의 지역, 연령 설정, 동의 여부,
+      Google 계정 및 기기 광고 설정 등에 따라 달라질 수 있습니다.
+      지역별 법령상 동의가 필요한 경우 앱은 광고 요청 전에 필요한
+      고지 및 동의 절차를 제공합니다.
+    </p>
+
+    <p>
+      개발자는 광고 관련 정보를 판매하지 않습니다.
+      Google의 정보 처리는 Google의 개인정보처리방침 및 광고 관련
+      정책에 따릅니다.
+    </p>
+
+    <h2>5. 월 구독 및 Google Play 결제</h2>
+
+    <p>
+      앱의 월 구독은 Google Play 결제 시스템을 통해 제공되는
+      자동 갱신형 디지털 구독입니다.
+    </p>
+
+    <ul>
+      <li>
+        구독이 활성화된 기간 동안 경험치 부스팅이 상시 적용됩니다.
+      </li>
+
+      <li>
+        “상시”는 현재 결제된 구독 기간 동안 광고 시청 없이 부스팅이
+        계속 적용된다는 의미이며, 영구적인 평생 혜택을 의미하지
+        않습니다.
+      </li>
+
+      <li>
+        구독 가격, 결제 주기, 정확한 부스팅 효과, 자동 갱신 여부 및
+        주요 조건은 구매 확정 전에 앱 화면과 Google Play 결제 화면에
+        표시됩니다.
+      </li>
+
+      <li>
+        이용자가 해지하지 않으면 구독은 매월 자동 갱신되며,
+        Google Play에 등록된 결제수단으로 요금이 청구될 수 있습니다.
+      </li>
+
+      <li>
+        앱을 삭제하거나 게임 데이터를 삭제하는 것만으로는 구독이
+        해지되지 않습니다.
+      </li>
+    </ul>
+
+    <p>
+      구독 처리 과정에서 앱 또는 개발자는 다음과 같은 제한된 거래
+      정보를 확인하거나 처리할 수 있습니다.
+    </p>
+
+    <ul>
+      <li>상품 ID</li>
+      <li>구매 토큰</li>
+      <li>주문번호</li>
+      <li>구매 상태</li>
+      <li>구독 활성 여부</li>
+      <li>갱신, 해지, 만료, 환불 또는 취소 상태</li>
+    </ul>
+
+    <p>
+      해당 정보는 구독 확인, 혜택 부여 및 회수, 구매 복원,
+      부정 결제 방지, 고객 지원 및 분쟁 처리를 위해 사용됩니다.
+    </p>
+
+    <p>
+      신용카드 번호, 은행계좌 번호 등 실제 결제수단 정보는
+      Google Play가 직접 처리하며, 개발자는 이를 직접 수집하거나
+      저장하지 않습니다.
+    </p>
+
+    <p>
+      이용자는 Google Play 스토어의 구독 관리 화면에서 언제든지
+      구독을 관리하거나 해지할 수 있습니다.
+    </p>
+
+    <p>
+      구독을 해지하면 일반적으로 다음 결제가 중단되며, 이미 결제된
+      이용 기간이 끝날 때까지 혜택이 유지될 수 있습니다.
+      다만, 환불 또는 구매 취소·철회·회수 처리된 경우에는
+      Google Play의 구독 상태와 관련 법령에 따라 혜택이 더 일찍
+      종료될 수 있습니다.
+    </p>
+
+    <h2>6. 개인정보 처리 목적</h2>
+
+    <p>
+      앱과 개발자는 다음 목적에 필요한 범위에서만 정보를 처리합니다.
+    </p>
+
+    <ul>
+      <li>게임 진행 저장 및 세계수 성장 기능 제공</li>
+      <li>
+        보상형 광고 시청 확인 및 일정 시간 경험치 부스팅 제공
+      </li>
+      <li>
+        월 구독 구매 확인 및 구독 기간 중 상시 경험치 부스팅 제공
+      </li>
+      <li>구독 복원, 갱신, 해지 및 종료 처리</li>
+      <li>
+        광고 제공, 광고 성과 측정, 서비스 안정성 분석 및 부정행위 방지
+      </li>
+      <li>고객 문의, 구매 문의, 환불 및 분쟁 처리</li>
+      <li>관련 법령 및 Google Play 정책 준수</li>
+    </ul>
+
+    <h2>7. 외부 서비스 제공자와 정보 처리</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>서비스 제공자</th>
+          <th>처리될 수 있는 정보</th>
+          <th>이용 목적</th>
+          <th>보유 기간</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td data-label="서비스 제공자">
+            Google LLC 및 Google 계열사<br />
+            Google AdMob / Google Mobile Ads SDK
+          </td>
+
+          <td data-label="처리될 수 있는 정보">
+            IP 주소, 대략적인 위치, 앱·광고 상호작용, 진단 정보,
+            광고 ID 및 기타 기기·계정 식별자
+          </td>
+
+          <td data-label="이용 목적">
+            광고 제공, 광고 측정, 분석, 보안 및 부정행위 방지
+          </td>
+
+          <td data-label="보유 기간">
+            Google의 개인정보처리방침 및 관련 법령에 따른 기간
+          </td>
+        </tr>
+
+        <tr>
+          <td data-label="서비스 제공자">
+            Google LLC 및 Google 계열사<br />
+            Google Play 결제 시스템
+          </td>
+
+          <td data-label="처리될 수 있는 정보">
+            Google 계정 및 결제 관련 정보, 상품 ID, 구매 토큰,
+            주문번호, 구독 및 결제 상태
+          </td>
+
+          <td data-label="이용 목적">
+            결제 처리, 자동 갱신, 구독 확인·관리, 환불, 보안 및
+            부정 결제 방지
+          </td>
+
+          <td data-label="보유 기간">
+            Google의 개인정보처리방침, 거래 정책 및 관련 법령에
+            따른 기간
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      개발자가 새로운 광고, 분석, 오류 수집, 클라우드 저장 또는
+      로그인 SDK를 추가하는 경우 실제 데이터 처리 내용에 맞춰
+      본 방침을 수정합니다.
+    </p>
+
+    <h2>8. 개인정보의 국외 처리 또는 이전 가능성</h2>
+
+    <p>
+      Google AdMob 및 Google Play 서비스 이용 과정에서 정보가
+      Google LLC와 Google 계열사에 의해 미국 및 Google이 데이터
+      처리 시설을 운영하는 국가에서 처리될 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        <strong>이전받는 자:</strong>
+        Google LLC 및 Google 계열사
+      </li>
+
+      <li>
+        <strong>이전되는 정보:</strong>
+        본 방침 제4조, 제5조 및 제7조에 기재된 광고·기기·진단·구매
+        관련 정보
+      </li>
+
+      <li>
+        <strong>이전 시기 및 방법:</strong>
+        광고 요청·시청·상호작용 또는 구매·갱신·복원·환불 확인 시
+        암호화된 네트워크를 통한 전송
+      </li>
+
+      <li>
+        <strong>이용 목적:</strong>
+        광고 및 결제 서비스 제공, 분석, 보안, 부정행위 방지 및
+        고객 지원
+      </li>
+
+      <li>
+        <strong>보유 및 이용 기간:</strong>
+        Google의 개인정보처리방침과 관련 법령에서 정한 기간
+      </li>
+    </ul>
+
+    <p>
+      이용자는 보상형 광고 시청과 유료 구독 구매를 선택하지 않을
+      수 있습니다.
+    </p>
+
+    <p>
+      지역별 법령상 별도 동의가 필요한 정보 처리에 대해서는 앱에서
+      제공되는 개인정보 선택 화면을 통해 동의를 거부하거나 철회할
+      수 있습니다. 이 경우 맞춤형 광고 또는 일부 광고 기능의 이용이
+      제한될 수 있습니다.
+    </p>
+
+    <h2>9. 개인정보 및 거래기록의 보유 기간</h2>
+
+    <ul>
+      <li>
+        <strong>기기 내부 게임 정보:</strong>
+        앱 데이터 삭제 또는 앱 삭제 시까지
+      </li>
+
+      <li>
+        <strong>고객 문의 정보:</strong>
+        문의 처리 완료 후 지체 없이 삭제합니다. 다만, 소비자 불만
+        또는 분쟁 처리 기록에 해당하는 경우 관련 법령이 정한 기간
+        동안 보관될 수 있습니다.
+      </li>
+
+      <li>
+        <strong>계약 또는 청약철회 관련 기록:</strong>
+        관련 법령이 적용되는 경우 5년
+      </li>
+
+      <li>
+        <strong>대금 결제 및 디지털 서비스 공급 기록:</strong>
+        관련 법령이 적용되는 경우 5년
+      </li>
+
+      <li>
+        <strong>소비자 불만 또는 분쟁 처리 기록:</strong>
+        관련 법령이 적용되는 경우 3년
+      </li>
+
+      <li>
+        <strong>광고 및 Google 서비스 처리 정보:</strong>
+        Google의 정책 및 관련 법령에 따른 기간
+      </li>
+    </ul>
+
+    <p>
+      보유 기간이 끝나거나 처리 목적이 달성된 정보는 복구하기 어려운
+      방법으로 삭제합니다.
+    </p>
+
+    <p>
+      관련 법령상 보존 의무가 있는 경우에는 해당 기간 동안 다른
+      목적으로 사용하지 않고 분리하여 보관할 수 있습니다.
+    </p>
+
+    <h2>10. 이용자의 권리 및 행사 방법</h2>
+
+    <p>
+      이용자는 관련 법령이 정하는 범위에서 개인정보의 열람, 정정,
+      삭제, 처리정지 또는 동의 철회를 요청할 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        기기 내부 게임 정보는 기기 설정의 앱 데이터 삭제 또는
+        앱 삭제를 통해 삭제할 수 있습니다.
+      </li>
+
+      <li>
+        광고 ID는 Android 기기의 개인정보 또는 광고 설정에서
+        재설정하거나 삭제할 수 있습니다.
+      </li>
+
+      <li>
+        구독은 Google Play 스토어의 결제 및 구독 메뉴에서 관리하거나
+        해지할 수 있습니다.
+      </li>
+
+      <li>
+        고객 문의 과정에서 제공한 정보의 삭제 요청은 아래 개인정보
+        문의처로 접수할 수 있습니다.
+      </li>
+    </ul>
+
+    <p>
+      앱은 자체 회원 계정을 생성하지 않으므로 별도의 앱 계정 삭제
+      절차는 제공하지 않습니다.
+    </p>
+
+    <h2>11. 안전성 확보 조치</h2>
+
+    <p>
+      개발자는 개인정보 또는 거래 관련 정보가 불필요하게 처리되지
+      않도록 최소한의 정보만 사용하고, 앱 권한과 외부 SDK 사용 범위를
+      제한하며, 관련 정보에 대한 접근을 필요한 범위로 제한합니다.
+    </p>
+
+    <p>
+      Google 서비스로 전송되는 정보는 해당 SDK가 제공하는 암호화
+      통신 방식에 따라 전송됩니다.
+    </p>
+
+    <h2>12. 아동의 개인정보</h2>
+
+    <p>
+      앱은 만 14세 미만 아동을 주된 이용 대상으로 설계하지 않았으며,
+      개발자가 운영하는 회원가입 기능을 통해 아동의 개인정보를
+      의도적으로 수집하지 않습니다.
+    </p>
+
+    <p>
+      만 14세 미만 아동이 고객 문의 과정에서 개인정보를 제공한 사실을
+      확인한 경우 법정대리인은 해당 정보의 삭제를 요청할 수 있습니다.
+    </p>
+
+    <p>
+      앱의 실제 대상 연령에 아동이 포함되는 경우 개발자는
+      Google Play 가족 정책, 아동 대상 광고 제한 및 관련 법령에 맞춰
+      광고 설정과 개인정보 처리 절차를 별도로 적용합니다.
+    </p>
+
+    <h2>13. 개인정보처리방침의 변경</h2>
+
+    <p>
+      앱 기능, 외부 SDK, 광고 방식, 결제 방식 또는 관련 법령이
+      변경되는 경우 본 개인정보처리방침이 수정될 수 있습니다.
+    </p>
+
+    <p>
+      변경된 방침은 이 페이지에 시행일과 최종 수정일을 표시하여
+      공개하며, 이용자 권리에 중대한 영향을 주는 변경은 가능한
+      범위에서 앱 내 공지 등을 통해 추가로 안내합니다.
+    </p>
+
+    <h2>14. 개인정보 보호책임자 및 문의처</h2>
+
+    <p>
+      개인정보 보호책임자: sahy7675<br />
+      문의 이메일:
+      <strong>sahy7675@gmail.com</strong>
+    </p>
+
+    <div class="warning">
+      공개 전에 위 문의 이메일을 실제로 사용하는 이메일 주소로
+      반드시 교체해야 합니다.
+    </div>
+
+    <h2>15. 광고 및 월 구독 이용 안내</h2>
+
+    <p>
+      이 절은 보상형 광고와 월 자동 갱신 구독의 이용 조건을 이용자가
+      한 페이지에서 확인할 수 있도록 안내합니다.
+    </p>
+
+    <div class="purchase-box">
+      <h3>15.1 보상형 광고</h3>
+
+      <ul>
+        <li>
+          보상형 광고 시청은 이용자가 직접 선택하는 선택 사항입니다.
+        </li>
+
+        <li>
+          광고를 끝까지 시청하고 광고 제공 시스템에서 완료가 정상적으로
+          확인되면, 앱 화면에 표시된 배율과 시간 동안 경험치 부스팅이
+          적용됩니다.
+        </li>
+
+        <li>
+          광고를 시청하지 않아도 기본적인 게임 이용은 가능하며,
+          해당 광고에 연결된 일시적 부스팅 혜택만 제공되지 않습니다.
+        </li>
+
+        <li>
+          네트워크 오류, 광고 미완료, 비정상적인 반복 시청 또는 광고
+          시스템의 완료 확인 실패가 발생한 경우 보상이 지급되지 않거나
+          지급이 지연될 수 있습니다.
+        </li>
+      </ul>
+    </div>
+
+    <div class="purchase-box">
+      <h3>15.2 월 구독</h3>
+
+      <ul>
+        <li>
+          월 구독은 Google Play 결제 시스템을 사용하는 자동 갱신형
+          디지털 구독입니다.
+        </li>
+
+        <li>
+          구독 가격과 결제 통화는 구매 확정 전 앱의 구독 화면과
+          Google Play 결제 화면에 표시됩니다.
+        </li>
+
+        <li>
+          구독이 유효한 기간에는 광고 시청 없이 앱 화면에 고지된
+          경험치 부스팅 효과가 상시 적용됩니다.
+        </li>
+
+        <li>
+          “상시 부스팅”은 유효한 구독 기간 동안 계속 적용된다는
+          의미이며, 영구 이용권 또는 평생 혜택을 의미하지 않습니다.
+        </li>
+
+        <li>
+          이용자가 다음 결제일 전에 구독을 해지하지 않으면 구독이
+          매월 자동 갱신되고 Google Play에 등록된 결제수단으로 요금이
+          청구될 수 있습니다.
+        </li>
+
+        <li>
+          앱을 삭제하거나 게임 데이터를 삭제하는 것만으로는 구독이
+          해지되지 않습니다.
+        </li>
+      </ul>
+    </div>
+
+    <div class="purchase-box">
+      <h3>15.3 구독 관리·해지 및 혜택 종료</h3>
+
+      <p>
+        구독은 다음 경로에서 관리하거나 해지할 수 있습니다.
+      </p>
+
+      <div class="price-note">
+        Google Play 스토어 → 프로필 → 결제 및 정기 결제
+        → 정기 결제 → 네메트라 → 구독 취소
+      </div>
+
+      <ul>
+        <li>
+          구독을 해지하면 일반적으로 다음 자동 결제가 중단되며,
+          이미 결제된 구독 기간이 끝날 때까지 혜택을 이용할 수 있습니다.
+        </li>
+
+        <li>
+          구독 기간이 만료되거나 결제가 정상적으로 갱신되지 않으면
+          상시 부스팅 혜택이 종료됩니다.
+        </li>
+
+        <li>
+          구매가 취소·환불·회수되거나 결제의 유효성이 확인되지 않는
+          경우 구독 혜택이 종료 또는 회수될 수 있습니다.
+        </li>
+
+        <li>
+          환불과 청약철회는 관련 법령, Google Play 환불 정책 및
+          실제 결제 상태에 따라 처리됩니다.
+        </li>
+      </ul>
+    </div>
+
+    <div class="purchase-box">
+      <h3>15.4 구매 전에 표시되는 정보</h3>
+
+      <p>
+        구독 구매 확정 전 앱 화면과 Google Play 결제 화면에서
+        다음 정보를 확인할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>현지 통화로 표시된 실제 월 구독 가격</li>
+        <li>월 단위 자동 갱신 여부와 결제 주기</li>
+        <li>
+          구독 기간에 적용되는 정확한 경험치 부스팅 배율 또는 효과
+        </li>
+        <li>
+          무료 체험이나 할인 프로모션이 있는 경우 적용 기간,
+          종료 시점 및 이후 청구 금액
+        </li>
+        <li>구독 관리·해지 방법과 개인정보처리방침</li>
+      </ul>
+
+      <p>
+        Google Play 결제 화면에 표시되는 가격과 조건이 실제 결제에
+        적용됩니다.
+      </p>
+    </div>
+
+    <h2>16. 관련 외부 정책 및 관리 페이지</h2>
+
+    <ul>
+      <li>
+        <a
+          href="https://policies.google.com/privacy?hl=ko"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google 개인정보처리방침
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://policies.google.com/technologies/ads?hl=ko"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google 광고 기술 및 개인정보 안내
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://play.google.com/store/account/subscriptions"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google Play 구독 관리
+        </a>
+      </li>
+    </ul>
+
+    <footer>
+      본 개인정보처리방침 및 광고·구독 이용 안내는
+      2026년 8월 26일부터 적용됩니다.
+    </footer>
+  </main>
+</body>
+</html>
